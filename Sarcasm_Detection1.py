@@ -28,7 +28,6 @@ import nltk
 from nltk.corpus import stopwords
 stop = stopwords.words('english')
 
-
 # ## Load the data
 
 # In[2]:
