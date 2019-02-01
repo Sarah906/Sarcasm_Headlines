@@ -1,13 +1,5 @@
-#### Maimona And Sara Part ==========================
+#### Maimona And Sarah Part ==========================
 ## Building prediction model
-
-
-# coding: utf-8
-
-# # Sarcasm Detection
-
-# ## Import libraries
-
 # In[1]:
 
 
@@ -51,7 +43,7 @@ from flask import Flask , request, jsonify
 
 app = Flask(__name__)
 
-#http://127.0.0.1:5000/predict?text=hi esraa
+#http://127.0.0.1:5000/predict?text=
 
 @app.route('/predict',methods = ["GET", "POST"])
 def hello_predict():
@@ -67,6 +59,6 @@ def hello_predict():
 
 
 if __name__ == '__main__':
-    app.run()
+app.run(host='0.0.0.0', port=80)
 
 
