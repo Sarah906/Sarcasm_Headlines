@@ -1,5 +1,6 @@
-#### Maimona And Sarah Part ==========================
+#### Maimona And Sara Part ==========================
 ## Building prediction model
+
 # In[1]:
 
 
@@ -43,7 +44,7 @@ from flask import Flask , request, jsonify
 
 app = Flask(__name__)
 
-#http://127.0.0.1:5000/predict?text=
+#http://127.0.0.1:5000/predict?text=hi esraa
 
 @app.route('/predict',methods = ["GET", "POST"])
 def hello_predict():
@@ -58,10 +59,7 @@ def hello_predict():
     return jsonify(result)
 
 
-
-
-
 if __name__ == '__main__':
-    app.debug = True
-    app.run(host = '0.0.0.0',port=80)
+    app.run()
+
 
